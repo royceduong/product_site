@@ -1,0 +1,26 @@
+Product Manager
+
+Create Components so i can create the home page.
+
+Home Page
+    Place Text 
+
+Products List
+    COMPLETE List items 
+        DONE Set up Http Service.
+            DONE Completemade HttpRequest to GetProducts.
+        DONE Revisit when I can create a product.
+
+    Edit and Delete Function
+        -Edit leads to a new page and form
+        -Title, Price, Image URL. Update and Delete Buttons.
+
+
+Edit Components
+    Get the current item
+        -prefill form with item information.
+Product Creation
+    -Form
+        create functioning form that sends information back.
+            -forms module.
+            -double binding?

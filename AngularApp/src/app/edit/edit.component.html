@@ -1,0 +1,10 @@
+<h1> Edit Product</h1>
+<!-- <p>{{errors}}</p>
+<p style="color:red" *ngFor = "let error of errors"> {{error}} </p> -->
+<form (submit)="componentEditProduct()">
+  <h4> Title: <input type="text" name="editProduct.title" [(ngModel)]="editProduct.title" ></h4>
+  <h4> Price: <input type="number" name="editProduct.price" [(ngModel)]="editProduct.price" ></h4>
+  <h4> Image URL: <input type="text" name="editProduct.url" [(ngModel)]="editProduct.url"></h4>
+  <input type="submit" value = "Update">
+  <button (click)= "componentDelete(editProduct._id)">Delete</button>
+</form>

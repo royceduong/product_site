@@ -1,0 +1,10 @@
+<h1> Create a New Product</h1>
+<p>{{errors}}</p>
+<p style="color:red" *ngFor = "let error of errors"> {{error}} </p>
+<form (submit)="componentAddProduct()">
+  <h4> Title: <input type="text" name="newProduct.title" [(ngModel)]="newProduct.title" placeholder="Product Title"></h4>
+  <h4> Price: <input type="number" name="newProduct.price" [(ngModel)]="newProduct.price" placeholder="Product Price"></h4>
+  <h4> Image URL: <input type="text" name="newProduct.url" [(ngModel)]="newProduct.url" placeholder="Product Url"></h4>
+  <input type="submit" value="Create">
+  <button [routerLink] ="['/products']">Cancel</button>
+</form>
